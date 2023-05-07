@@ -1,4 +1,3 @@
-import imgSolar from '../../assets/foto-painel.svg'
 import imgLogo2 from '../../assets/logo2.svg'
 import './Login.css'
 
