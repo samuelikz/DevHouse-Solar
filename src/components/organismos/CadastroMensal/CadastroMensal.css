@@ -1,0 +1,29 @@
+#data,
+#unidade,
+#gerado {
+    width: 80%;
+    height: 35px;
+    border: 1px solid #878788;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 16px;
+    font-family: system-ui;
+    font-weight: 300;
+    color: #374557;
+}
+
+.form-g-cadastro{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+}
+
+.form-g-cadastro label {
+    font-family: system-ui;
+    font-size: 16px;
+    font-weight: 500;
+    color: #374557;
+    margin-left: 2px;
+    font-weight: 600;
+}
