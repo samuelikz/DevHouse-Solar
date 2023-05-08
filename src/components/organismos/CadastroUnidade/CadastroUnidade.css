@@ -20,7 +20,7 @@
 }
 
 #apelido {
-    width: 80%;
+    width: 30%;
     height: 35px;
     border: 1px solid #878788;
     border-radius: 3px;
@@ -34,7 +34,7 @@
 #marca,
 #local,
 #modelo {
-    width: 100%;
+    width: 40%;
     height: 35px;
     border: 1px solid #878788;
     border-radius: 3px;

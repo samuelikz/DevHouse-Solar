@@ -55,12 +55,20 @@
       "id": "1SmVWkz"
     },
     {
-      "apelido": "Editando",
+      "apelido": "Escritório Davi'la ",
       "local": "Senai",
-      "marca": "Novo",
+      "marca": "G-Panel",
       "modelo": "Avançado",
       "ativa": true,
       "id": "XBFjIMp"
     }
-  ]
+  ],
+  "auth":{
+    "token": "9afza5vpuemopj82ffu65gt9sh9v8n9s",
+    "user": {
+      "id": "5ee0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e",
+      "nome": "João Paulo",
+      "senha": "123123"
+      }
+  }
 }
