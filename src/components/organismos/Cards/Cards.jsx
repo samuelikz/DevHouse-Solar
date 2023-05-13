@@ -1,24 +1,29 @@
-export default function Cards(){
-    return(
+import { Link } from 'react-router-dom';
+import './Cards.css'
+
+export default function Cards() {
+    return (
         <div>
-            <ul>
-                <li>
-                    <h6>Total de Unidades</h6>
+            <section className='lista-card'>
+
+                <Link to='/unidades-consulmidora' className='lista-item'>
+                    <h4 className='lista-title'>Total de Unidades</h4>
                     <span>0</span>
-                </li>
-                <li>
-                    <h6>Unidades Ativas</h6>
+                </Link>
+                <Link to='/unidades-consulmidora' className='lista-item selected'>
+                    <h4 className='lista-title'>Unidades Ativas</h4>
                     <span>0</span>
-                </li>
-                <li>
-                    <h6>Unidades Initivas</h6>
+                </Link>
+                <Link to='/unidades-consulmidora' className='lista-item '>
+                    <h4 className='lista-title'>Unidades Inativas</h4>
                     <span>0</span>
-                </li>
-                <li>
-                    <h6>Medida de Energia</h6>
-                    <span>0</span>
-                </li>
-            </ul>
+                </Link>
+                <Link to='/' className='lista-item '>
+                    <h4 className='lista-title'>Medida de Energia</h4>
+                    <span>0 kw</span>
+                </Link>
+
+            </section>
         </div>
-    )
+    );
 }
