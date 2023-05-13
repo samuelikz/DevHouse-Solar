@@ -25,10 +25,13 @@ export default function CadastroMensal() {
             body: body,
         })
             .then((response) => response.json())
-            .then((data) => {
-                console.log(data)
-            })
             .catch((error) => console.log(error));
+
+        setFormValues({
+            apelido: '',
+            data: '',
+            totalKwGerado: '',
+        });
     };
 
     const getData = () => {
@@ -39,10 +42,6 @@ export default function CadastroMensal() {
             },
         })
             .then((response) => response.json())
-            .then((data) => {
-                setUnidades(data)
-                console.log(data)
-            })
             .catch((error) => console.log(error))
     }
 
@@ -56,7 +55,7 @@ export default function CadastroMensal() {
 
                 <label htmlFor="unidade">Unidade Geradora</label>
                 <select id="unidade" name="unidade" autoComplete="off" required onChange={(e) => setFormValues({ ...formValues, apelido: e.target.value })}>
-                <option value="" disabled selected>Selecione uma unidade</option>
+                    <option value="" disabled selected>Selecione uma unidade</option>
                     {unidades.map((unidade) => (
                         <option value={unidade.apelido} key={unidade.id}>{unidade.apelido}</option>
                     ))}
@@ -79,7 +78,7 @@ export default function CadastroMensal() {
                             ...formValues,
                             totalKwGerado: parseInt(e.target.value),
                         })
-                    } required/>
+                    } required />
 
                 <div className="form-g-active">
                     <Button className='button blue' type='submit'>Cadastrar</Button>
