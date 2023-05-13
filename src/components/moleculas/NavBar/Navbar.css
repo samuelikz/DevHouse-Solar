@@ -46,6 +46,7 @@
 
 .Navbar button img {
   color: #A098AE;
+  width: 32px;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) rightness(100%) contrast(100%);
 }
 

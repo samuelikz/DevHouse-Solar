@@ -11,13 +11,19 @@
       "data": "2023-05-08",
       "totalKwGerado": 23,
       "id": 2
+    },
+    {
+      "apelido": "Padaria São Luiz",
+      "data": "2023-05-13",
+      "totalKwGerado": 20,
+      "id": 3
     }
   ],
   "unidades": [
     {
       "id": "abc",
       "apelido": "Padaria São Luiz",
-      "local": "Rua 1237",
+      "local": "Rua 123789",
       "marca": "Marca 1",
       "modelo": "Modelo 1",
       "ativa": true
@@ -63,12 +69,8 @@
       "id": "XBFjIMp"
     }
   ],
-  "auth":{
-    "token": "9afza5vpuemopj82ffu65gt9sh9v8n9s",
-    "user": {
-      "id": "5ee0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e",
-      "nome": "João Paulo",
-      "senha": "123123"
-      }
+  "auth": {
+    "username": "samuel_nunes-silva",
+    "password": "a"
   }
 }
