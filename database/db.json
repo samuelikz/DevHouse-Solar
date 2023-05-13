@@ -17,6 +17,42 @@
       "data": "2023-05-13",
       "totalKwGerado": 20,
       "id": 3
+    },
+    {
+      "apelido": "Padaria São Luiz",
+      "data": "2023-05-13",
+      "totalKwGerado": 12,
+      "id": 4
+    },
+    {
+      "apelido": "Padaria São Luiz",
+      "data": "2023-05-13",
+      "totalKwGerado": 23,
+      "id": 5
+    },
+    {
+      "apelido": "",
+      "data": "2023-05-01",
+      "totalKwGerado": 23,
+      "id": 6
+    },
+    {
+      "apelido": "Mercadinho Paraiba",
+      "data": "2023-05-01",
+      "totalKwGerado": 23,
+      "id": 7
+    },
+    {
+      "apelido": null,
+      "data": null,
+      "totalKwGerado": null,
+      "id": 8
+    },
+    {
+      "apelido": "Padaria São Luiz",
+      "data": "2023-05-13",
+      "totalKwGerado": 2,
+      "id": 9
     }
   ],
   "unidades": [

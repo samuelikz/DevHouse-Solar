@@ -42,6 +42,9 @@ export default function CadastroMensal() {
             },
         })
             .then((response) => response.json())
+            .then((data) => {
+                setUnidades(data)
+            })
             .catch((error) => console.log(error))
     }
 
@@ -54,12 +57,13 @@ export default function CadastroMensal() {
             <form className="form-g-cadastro" onSubmit={handleSubmit}>
 
                 <label htmlFor="unidade">Unidade Geradora</label>
-                <select id="unidade" name="unidade" autoComplete="off" required onChange={(e) => setFormValues({ ...formValues, apelido: e.target.value })}>
-                    <option value="" disabled selected>Selecione uma unidade</option>
+                <select id="unidade" name="unidade" autoComplete="off" required value={formValues.apelido} onChange={(e) => setFormValues({ ...formValues, apelido: e.target.value })}>
+                    <option value="" disabled defaultValue>Selecione uma unidade</option>
                     {unidades.map((unidade) => (
                         <option value={unidade.apelido} key={unidade.id}>{unidade.apelido}</option>
                     ))}
                 </select>
+
 
                 <label htmlFor="data">Dia/Mês/ano</label>
                 <input type="date" id="data" name="data" min="1780-01-01" max="2080-01-01" value={formValues.data}
