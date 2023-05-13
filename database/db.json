@@ -59,12 +59,18 @@
       "data": "2023-05-13",
       "totalKwGerado": 20,
       "id": 10
+    },
+    {
+      "apelido": "Mercadinho Paraiba",
+      "data": "2023-05-13",
+      "totalKwGerado": 23,
+      "id": 11
     }
   ],
   "unidades": [
     {
       "id": "abc",
-      "apelido": "Padaria São Luiz",
+      "apelido": "Padaria São Luiz ",
       "local": "Rua 123789",
       "marca": "Marca 1",
       "modelo": "Modelo 1",
@@ -76,7 +82,7 @@
       "local": "Rua 2",
       "marca": "Marca 2",
       "modelo": "Modelo 2",
-      "ativa": false
+      "ativa": true
     },
     {
       "id": "ghi",
