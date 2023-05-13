@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Dashboard, Geracao, Login, NotFound, Unidades } from "./pages"
+import { Dashboard, Geracao, Login, Unidades } from "./pages"
 import { Outlet, Navigate } from 'react-router-dom';
 import { useAuth } from './hooks/auth';
 
