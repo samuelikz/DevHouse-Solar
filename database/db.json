@@ -53,6 +53,12 @@
       "data": "2023-05-13",
       "totalKwGerado": 2,
       "id": 9
+    },
+    {
+      "apelido": "Padaria São Luiz",
+      "data": "2023-05-13",
+      "totalKwGerado": 20,
+      "id": 10
     }
   ],
   "unidades": [
@@ -101,7 +107,7 @@
       "local": "Senai",
       "marca": "G-Panel",
       "modelo": "Avançado",
-      "ativa": true,
+      "ativa": false,
       "id": "XBFjIMp"
     }
   ],
