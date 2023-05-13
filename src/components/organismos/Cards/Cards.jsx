@@ -1,29 +1,43 @@
 import { Link } from 'react-router-dom';
-import './Cards.css'
+import { useState, useEffect } from 'react';
+import './Cards.css';
 
 export default function Cards() {
-    return (
-        <div>
-            <section className='lista-card'>
+  const [totalUnidades, setTotalUnidades] = useState(0);
+  const [unidadesAtivas, setUnidadesAtivas] = useState(0);
+  const [unidadesInativas, setUnidadesInativas] = useState(0);
 
-                <Link to='/unidades-consulmidora' className='lista-item'>
-                    <h4 className='lista-title'>Total de Unidades</h4>
-                    <span>0</span>
-                </Link>
-                <Link to='/unidades-consulmidora' className='lista-item selected'>
-                    <h4 className='lista-title'>Unidades Ativas</h4>
-                    <span>0</span>
-                </Link>
-                <Link to='/unidades-consulmidora' className='lista-item '>
-                    <h4 className='lista-title'>Unidades Inativas</h4>
-                    <span>0</span>
-                </Link>
-                <Link to='/' className='lista-item '>
-                    <h4 className='lista-title'>Medida de Energia</h4>
-                    <span>0 kw</span>
-                </Link>
+  useEffect(() => {
+    fetch('http://localhost:3000/unidades')
+      .then(response => response.json())
+      .then(data => {
+        setTotalUnidades(data.length);
+        setUnidadesAtivas(data.filter(unidade => unidade.ativa).length);
+        setUnidadesInativas(data.filter(unidade => !unidade.ativa).length);
+      })
+      .catch(error => console.error(error));
+  }, []);
 
-            </section>
-        </div>
-    );
+  return (
+    <div>
+      <section className='lista-card'>
+        <Link to='/unidades-consulmidora' className='lista-item'>
+          <h4 className='lista-title'>Total de Unidades</h4>
+          <span>{totalUnidades}</span>
+        </Link>
+        <Link to='/unidades-consulmidora' className='lista-item selected'>
+          <h4 className='lista-title'>Unidades Ativas</h4>
+          <span>{unidadesAtivas}</span>
+        </Link>
+        <Link to='/unidades-consulmidora' className='lista-item '>
+          <h4 className='lista-title'>Unidades Inativas</h4>
+          <span>{unidadesInativas}</span>
+        </Link>
+        <Link to='/' className='lista-item '>
+          <h4 className='lista-title'>Medida de Energia</h4>
+          <span>0 kw</span>
+        </Link>
+      </section>
+    </div>
+  );
 }
