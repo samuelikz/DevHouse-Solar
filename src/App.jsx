@@ -14,17 +14,19 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+
         <Route path='/login' element={<Login/>}/>
+        <Route path='/*' element={<Navigate to="/" replace />} />
+
         <Route element={<PrivateRoute/>}>
 
-        <Route path='/' element={<Dashboard/>}/>
-        <Route path='/unidades-consulmidora' element={<Unidades/>}/>
-        <Route path='/cadastro-energia-gerada' element={<Geracao/>}/>
-
-        <Route path='*' element={<NotFound/>}/>
+          <Route path='/' element={<Dashboard/>}/>
+          <Route path='/unidades-consulmidora' element={<Unidades/>}/>
+          <Route path='/cadastro-energia-gerada' element={<Geracao/>}/>
 
         </Route>
       </Routes>
+
     </BrowserRouter>
   )
 }
