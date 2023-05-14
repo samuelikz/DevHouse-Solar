@@ -23,7 +23,7 @@ export default function Grafico() {
   const [loading, setLoading] = useState(true);
 
   async function fetchData() {
-    const response = await fetch('http://localhost:3000/gerados');
+    const response = await fetch('https://json-server-fe.vercel.app/gerados');
     const dados = await response.json();
   
     const dataPorMes = dados.reduce((acumulador, item) => {

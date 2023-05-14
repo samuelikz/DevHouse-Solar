@@ -41,6 +41,30 @@
       "data": "2023-05-14",
       "totalKwGerado": -200,
       "id": 7
+    },
+    {
+      "apelido": "Posto Atlas",
+      "data": "2023-05-02",
+      "totalKwGerado": 10,
+      "id": 8
+    },
+    {
+      "apelido": "Posto Atlas",
+      "data": "2023-03-14",
+      "totalKwGerado": 50,
+      "id": 9
+    },
+    {
+      "apelido": "Posto Atlas",
+      "data": "2023-04-14",
+      "totalKwGerado": -100,
+      "id": 10
+    },
+    {
+      "apelido": "Edifício Morais ",
+      "data": "2023-05-31",
+      "totalKwGerado": 200,
+      "id": 11
     }
   ],
   "unidades": [

@@ -17,7 +17,7 @@ export default function CadastroMensal() {
         const { apelido, data, totalKwGerado } = formValues;
         const body = JSON.stringify({ apelido, data, totalKwGerado })
 
-        fetch('http://localhost:3000/gerados', {
+        fetch('https://json-server-fe.vercel.app/gerados', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -35,7 +35,7 @@ export default function CadastroMensal() {
     };
 
     const getData = () => {
-        fetch("http://localhost:3000/unidades?ativa=true", {
+        fetch("https://json-server-fe.vercel.app/unidades?ativa=true", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"

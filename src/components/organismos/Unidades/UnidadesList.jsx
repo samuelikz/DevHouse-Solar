@@ -7,7 +7,7 @@ export default function UnidadesList({ setOpenForm, setUnidadeSelecionada }) {
     const [filtro, setFiltro] = useState("todos");
 
     const getData = () => {
-        fetch("http://localhost:3000/unidades")
+        fetch("https://json-server-fe.vercel.app/unidades")
             .then((response) => response.json())
             .then((data) => setUnidades(data));
     };
@@ -17,7 +17,7 @@ export default function UnidadesList({ setOpenForm, setUnidadeSelecionada }) {
     }, []);
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:3000/unidades/${id}`, {
+        fetch(`https://json-server-fe.vercel.app/unidades/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",
