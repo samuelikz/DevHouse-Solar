@@ -1,29 +1,41 @@
 {
   "gerados": [
     {
-      "apelido": "Padaria São Luiz ",
+      "apelido": "Posto Atlas",
       "data": "2023-01-31",
       "totalKwGerado": 200,
       "id": 1
     },
     {
-      "apelido": "Mercadinho Paraiba",
-      "data": "2023-05-14",
-      "totalKwGerado": 600,
+      "apelido": "Edifício Torres",
+      "data": "2023-02-28",
+      "totalKwGerado": 100,
       "id": 2
     },
     {
-      "apelido": "Edifício Torres",
+      "apelido": "Edifício Morais ",
       "data": "2023-03-14",
-      "totalKwGerado": 400,
+      "totalKwGerado": 220,
       "id": 3
+    },
+    {
+      "apelido": "Escritório Davi'la ",
+      "data": "2023-04-30",
+      "totalKwGerado": 290,
+      "id": 4
+    },
+    {
+      "apelido": "Casa de Josival",
+      "data": "2023-05-31",
+      "totalKwGerado": 200,
+      "id": 5
     }
   ],
   "unidades": [
     {
       "id": "abc",
       "apelido": "Padaria São Luiz ",
-      "local": "Rua 123789",
+      "local": "Rua Alves Pintor",
       "marca": "Marca 1",
       "modelo": "Modelo 1",
       "ativa": false
@@ -31,15 +43,15 @@
     {
       "id": "def",
       "apelido": "Mercadinho Paraiba",
-      "local": "Rua 2",
+      "local": "Rua Doutor Larceda",
       "marca": "Marca 2",
       "modelo": "Modelo 2",
-      "ativa": true
+      "ativa": false
     },
     {
       "id": "ghi",
       "apelido": "Posto Atlas",
-      "local": "Rua 3",
+      "local": "Rua Paramirins",
       "marca": "Marca 3",
       "modelo": "Modelo 3",
       "ativa": true
@@ -67,6 +79,14 @@
       "modelo": "Avançado",
       "ativa": true,
       "id": "XBFjIMp"
+    },
+    {
+      "apelido": "Casa de Josival",
+      "local": "Rua caramelo ",
+      "marca": "C-Panel",
+      "modelo": "Médio",
+      "ativa": true,
+      "id": "jRbKyi_"
     }
   ],
   "auth": {

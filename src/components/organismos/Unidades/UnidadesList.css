@@ -83,3 +83,19 @@
     width: 10em;
     align-self: flex-end;
 }
+
+.filtro-container{
+    padding: 10px;
+    background: white;
+    width: 145px;
+    border-radius: 10px;
+    border: 1px solid #0000002b;
+    font-family: system-ui;
+}
+
+#filtro{
+    color: dimgrey;
+    border: 1px solid dimgray;
+    padding: 1px;
+    cursor: pointer;
+}
