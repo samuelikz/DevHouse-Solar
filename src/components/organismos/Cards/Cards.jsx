@@ -9,7 +9,7 @@ export default function Cards() {
   const [totalGerado, setTotalGerado] = useState(0);
 
   useEffect(() => {
-    fetch('http://localhost:3000/unidades')
+    fetch('https://json-server-fe.vercel.app/unidades')
       .then(response => response.json())
       .then(data => {
         setTotalUnidades(data.length);
@@ -18,7 +18,7 @@ export default function Cards() {
       })
       .catch(error => console.error(error));
 
-    fetch("http://localhost:3000/gerados")
+    fetch("https://json-server-fe.vercel.app/gerados")
         .then((response) => response.json())
         .then((data) => {
             const total = data.reduce((acc, item) => acc + item.totalKwGerado, 0);

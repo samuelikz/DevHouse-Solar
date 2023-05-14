@@ -17,13 +17,13 @@ export default function CadastroUnidade({ setOpenForm, unidadeSelecionada, setUn
     const salvarFormulario = (event) => {
         event.preventDefault();
         if (unidadeSelecionada && unidadeSelecionada.id) {
-          fetch(`http://localhost:3000/unidades/${unidadeSelecionada.id}`, {
+          fetch(`https://json-server-fe.vercel.app/unidades/${unidadeSelecionada.id}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formulario),
           });
         } else {
-          fetch("http://localhost:3000/unidades", {
+          fetch("https://json-server-fe.vercel.app/unidades", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formulario),

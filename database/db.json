@@ -29,6 +29,42 @@
       "data": "2023-05-31",
       "totalKwGerado": 200,
       "id": 5
+    },
+    {
+      "apelido": "Padaria Alves",
+      "data": "2023-05-14",
+      "totalKwGerado": 100,
+      "id": 6
+    },
+    {
+      "apelido": "Edifício Torres",
+      "data": "2023-05-14",
+      "totalKwGerado": -200,
+      "id": 7
+    },
+    {
+      "apelido": "Posto Atlas",
+      "data": "2023-05-02",
+      "totalKwGerado": 10,
+      "id": 8
+    },
+    {
+      "apelido": "Posto Atlas",
+      "data": "2023-03-14",
+      "totalKwGerado": 50,
+      "id": 9
+    },
+    {
+      "apelido": "Posto Atlas",
+      "data": "2023-04-14",
+      "totalKwGerado": -100,
+      "id": 10
+    },
+    {
+      "apelido": "Edifício Morais ",
+      "data": "2023-05-31",
+      "totalKwGerado": 200,
+      "id": 11
     }
   ],
   "unidades": [
@@ -67,8 +103,8 @@
     {
       "apelido": "Edifício Morais ",
       "local": "Edifício Morais ",
-      "marca": "Solar Panel",
-      "modelo": "Modelo 5",
+      "marca": "S-Panel",
+      "modelo": "Avançado",
       "ativa": true,
       "id": "1SmVWkz"
     },
@@ -87,6 +123,14 @@
       "modelo": "Médio",
       "ativa": true,
       "id": "jRbKyi_"
+    },
+    {
+      "apelido": "Padaria Alves",
+      "local": "Rua Aquarino ",
+      "marca": "G-panel",
+      "modelo": "Simples",
+      "ativa": true,
+      "id": "YdxHbJ4"
     }
   ],
   "auth": {
