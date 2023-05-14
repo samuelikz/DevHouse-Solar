@@ -1,70 +1,22 @@
 {
   "gerados": [
     {
-      "apelido": "Padaria São Luiz",
-      "data": "2023-05-07",
-      "totalKwGerado": 23,
+      "apelido": "Padaria São Luiz ",
+      "data": "2023-01-31",
+      "totalKwGerado": 200,
       "id": 1
     },
     {
-      "apelido": "Posto Atlas",
-      "data": "2023-05-08",
-      "totalKwGerado": 23,
+      "apelido": "Mercadinho Paraiba",
+      "data": "2023-05-14",
+      "totalKwGerado": 600,
       "id": 2
     },
     {
-      "apelido": "Padaria São Luiz",
-      "data": "2023-05-13",
-      "totalKwGerado": 20,
+      "apelido": "Edifício Torres",
+      "data": "2023-03-14",
+      "totalKwGerado": 400,
       "id": 3
-    },
-    {
-      "apelido": "Padaria São Luiz",
-      "data": "2023-05-13",
-      "totalKwGerado": 12,
-      "id": 4
-    },
-    {
-      "apelido": "Padaria São Luiz",
-      "data": "2023-05-13",
-      "totalKwGerado": 23,
-      "id": 5
-    },
-    {
-      "apelido": "",
-      "data": "2023-05-01",
-      "totalKwGerado": 23,
-      "id": 6
-    },
-    {
-      "apelido": "Mercadinho Paraiba",
-      "data": "2023-05-01",
-      "totalKwGerado": 23,
-      "id": 7
-    },
-    {
-      "apelido": null,
-      "data": null,
-      "totalKwGerado": null,
-      "id": 8
-    },
-    {
-      "apelido": "Padaria São Luiz",
-      "data": "2023-05-13",
-      "totalKwGerado": 2,
-      "id": 9
-    },
-    {
-      "apelido": "Padaria São Luiz",
-      "data": "2023-05-13",
-      "totalKwGerado": 20,
-      "id": 10
-    },
-    {
-      "apelido": "Mercadinho Paraiba",
-      "data": "2023-05-13",
-      "totalKwGerado": 23,
-      "id": 11
     }
   ],
   "unidades": [
@@ -74,7 +26,7 @@
       "local": "Rua 123789",
       "marca": "Marca 1",
       "modelo": "Modelo 1",
-      "ativa": true
+      "ativa": false
     },
     {
       "id": "def",
@@ -113,7 +65,7 @@
       "local": "Senai",
       "marca": "G-Panel",
       "modelo": "Avançado",
-      "ativa": false,
+      "ativa": true,
       "id": "XBFjIMp"
     }
   ],
