@@ -35,7 +35,7 @@ export default function CadastroMensal() {
     };
 
     const getData = () => {
-        fetch("http://localhost:3000/unidades", {
+        fetch("http://localhost:3000/unidades?ativa=true", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
