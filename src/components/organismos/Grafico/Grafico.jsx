@@ -33,7 +33,7 @@ export default function Grafico() {
       }
       acumulador[mes] += item.totalKwGerado;
       return acumulador;
-    }, {});
+    }, {}); 
   
     const labels = Object.keys(dataPorMes);
     const valores = Object.values(dataPorMes);
@@ -69,7 +69,10 @@ export default function Grafico() {
         display: true,
         text: 'Total de energia gerada por mês',
         align: 'start',
-        color: 'black'
+        color: 'black',
+        font: {
+          size: '16px'
+        }
       }
     },
     scales:{
@@ -81,7 +84,7 @@ export default function Grafico() {
       y:{
         position: 'right',
         min: 0,
-        max: 1000,
+        max: valores,
         ticks:{
           stepSize: 2,
           callback: (value) => value
@@ -104,7 +107,7 @@ export default function Grafico() {
 
   return (
     <div style={{width: 'auto', height: 'auto', margin: '20px'}}>
-      <Line style={{padding: '10px', width: '90%', backgroundColor: 'white'}} data={data} options={options} />
+      <Line style={{padding: '10px', width: '90%', backgroundColor: 'white', borderRadius: '10px'}} data={data} options={options} />
     </div>
   );
 }

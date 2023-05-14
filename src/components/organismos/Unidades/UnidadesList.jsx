@@ -47,7 +47,7 @@ export default function UnidadesList({ setOpenForm, setUnidadeSelecionada }) {
 
 
             <div className="filtro-container">
-                <label htmlFor="filtro">Filtrar:</label>
+                <label htmlFor="filtro">Filtrar </label>
                 <select id="filtro" value={filtro} onChange={handleFiltroChange}>
                     <option value="todos">Todos</option>
                     <option value="ativos">Ativos</option>
