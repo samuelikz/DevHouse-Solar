@@ -35,7 +35,7 @@ export default function CadastroUnidade({ setOpenForm, unidadeSelecionada, setUn
 
     return (
         <section>
-            <form className="form" onSubmit={salvarFormulario}>
+            <form data-testid="cadastro-unidades" className="form" onSubmit={salvarFormulario}>
                 <label htmlFor="apelido">Apelido</label>
                 <input type="text" placeholder="Apelido" id="apelido" name="apelido" autoComplete="off" value={formulario.apelido} onChange={(e) => { setFormulario({ ...formulario, apelido: e.target.value }) }} required/>
                 <label htmlFor="local">Local</label>

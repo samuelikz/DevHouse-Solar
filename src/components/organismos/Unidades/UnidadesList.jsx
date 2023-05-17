@@ -41,7 +41,7 @@ export default function UnidadesList({ setOpenForm, setUnidadeSelecionada }) {
     });
 
     return (
-        <section className="unit-list">
+        <section className="unit-list" data-testid="unit-list">
 
             <h2 className="sub-title">Lista de unidades</h2>
 
@@ -89,7 +89,7 @@ export default function UnidadesList({ setOpenForm, setUnidadeSelecionada }) {
                 </tbody>
             </table>
             
-            <Button id='new-unit' classStyle='secondary' onClick={() => setOpenForm(true)}>Nova Unidade</Button>
+            <Button id='new-unit' data-testid="new-unit" classStyle='secondary' onClick={() => setOpenForm(true)}>Nova Unidade</Button>
         </section>
     )
 }
