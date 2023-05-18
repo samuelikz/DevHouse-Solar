@@ -78,7 +78,7 @@ export default function UnidadesList({ setOpenForm, setUnidadeSelecionada }) {
                             <td>{unidade.marca}</td>
                             <td>{unidade.modelo}</td>
                             <td>
-                                <Button classStyle='green' onClick={() => { setUnidadeSelecionada(unidade); setOpenForm(true); }}>
+                                <Button classStyle='green' data-testid="editar" onClick={() => { setUnidadeSelecionada(unidade); setOpenForm(true); }}>
                                     Editar
                                 </Button>
                             </td>
