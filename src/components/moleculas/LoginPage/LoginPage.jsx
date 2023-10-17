@@ -20,24 +20,24 @@ export default function LoginPage() {
   }, [token, navigate]);
 
   const authenticate = async (username, password) => {
-    // const response = await fetch('AQUI SERIA UMA API QUE REALIZA A AUTENTICAÇÃO', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify({
-    //     name: username,
-    //     password: password
-    //   })
-    // });
+    const response = await fetch('https://api-authentication-five.vercel.app/entrar', {
+    method: 'POST',
+    headers: {
+    'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+    name: username,
+    password: password
+    })
+    });
 
-    // if (!response.ok) {
-    //   throw new Error('Usuário ou senha inválidos');
-    // }
+    if (!response.ok) {
+    throw new Error('Usuário ou senha inválidos');
+    }
 
-    // const data = await response.json();
+    const data = await response.json();
 
-    const data = { token: 'seu-token-aqui' };
+    //const data = { token: 'seu-token-aqui' };
     return data.token;
   };
 
