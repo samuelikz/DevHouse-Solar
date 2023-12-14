@@ -20,7 +20,7 @@ export default function LoginPage() {
   }, [token, navigate]);
 
   const authenticate = async (username, password) => {
-    const response = await fetch('https://api-authentication-five.vercel.app/entrar', {
+    const response = await fetch('https://api-authentication-khaki.vercel.app/entrar', {
     method: 'POST',
     headers: {
     'Content-Type': 'application/json'
